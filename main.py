@@ -1,7 +1,7 @@
 print("Welcome to the 5 A Side Team List")
 team = []
 
-#user input for 5 postions and place them in correct index postion
+#user input for 5 postions
 gk = input("\nWho is playing in goal: ").title()
 team.append(gk)
 dfs = input("Who is playing in defense: ").title()
@@ -29,6 +29,7 @@ print("\nYour team currently has " + str(len(team)) + " players.")
 new_dfs = input("\nWho will replace " + injured + " in the team: ").title()
 team.insert(1,new_dfs)
 
+#confirm new team and final number of players
 print("\n\tThis is your revised team:")
 print("\n\t\t\tGoalkeeper:\t\t\t" + team[0])
 print("\t\t\tDefender:\t\t\t" + team[1])
